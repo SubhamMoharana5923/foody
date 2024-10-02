@@ -1,0 +1,133 @@
+/* src/components/Cart/Cart.css */
+
+.cart {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.cart-items {
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: rgb(2, 2, 2);
+    font-size: max(1vw, 12px);
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(218, 214, 214);
+}
+
+.cart-items-item {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    margin: 10px 0;
+    color: black;
+}
+
+.cart-items-item img {
+    width: 50px;
+    object-fit: cover;
+}
+
+.cart hr {
+    height: 1px;
+    background-color: rgb(218, 214, 214);
+    border: none;
+}
+
+.cart-items-item .cross {
+    cursor: pointer;
+    color: red;
+    font-size: 1.5em;
+    text-align: center;
+}
+.cart-bottom
+{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw,20px);
+
+}
+.cart-total
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.cart-total-details
+{
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+.cart-total hr
+{
+    margin: 10px 0px;
+
+}
+.cart-total button
+
+{
+border: none;
+color: white;
+background-color: tomato;
+width: max(15vw,200px);
+padding: 12px 0px;
+border-radius: 4px;
+cursor: pointer;
+
+}
+.cart-promo-code
+{
+    flex: 1;
+
+}
+.cart-promo-code p{
+    color: aqua;
+
+}
+.cart-promocode-input{
+margin-top: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgb(255, 255, 255);
+border-radius: 4px;
+
+}
+.cart-promocode-input input
+{
+    border: none;
+    background: transparent;
+    outline: none;
+    padding-left: 10px;
+
+
+}
+.cart-promocode-input button
+{
+padding: 12px 5px;
+background-color: black;
+border: none;
+color: aliceblue;
+width: max(10vw,150px);
+
+}
+@media (max-width:750px)
+{
+    .cart-bottom{
+        flex-direction: column-reverse;
+    }
+    .cart-promo-code{
+        justify-content: start;
+    }
+}
